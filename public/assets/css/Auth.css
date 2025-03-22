@@ -1,0 +1,123 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* Updated font-family */
+}
+
+/* Body Styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000; /* Consistent background color */
+}
+
+/* Wrapper Styles */
+.wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff; /* White background for the wrapper */
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Header Styles */
+.wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333; /* Dark text color */
+}
+
+/* Header Decoration */
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4; /* Blue underline */
+}
+
+/* Form Styles */
+.wrapper form {
+  margin-top: 30px;
+}
+
+/* Input Box Styles */
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333; /* Dark text color */
+  border: 1.5px solid #C7BEBE; /* Light border */
+  border-bottom-width: 2.5px; /* Thicker bottom border */
+  border-radius: 6px;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Input Focus and Valid Styles */
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #4070f4; /* Blue border on focus/valid */
+}
+
+/* Policy Text Styles */
+form .policy {
+  display: flex;
+  align-items: center;
+}
+
+form h3 {
+  color: #707070; /* Gray text color */
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* Button Styles */
+.input-box.button input {
+  color: #fff; /* White text color */
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4; /* Blue background */
+  cursor: pointer;
+}
+
+.input-box.button input:hover {
+  background: #0e4bf1; /* Darker blue on hover */
+}
+
+/* Text Link Styles */
+form .text h3 {
+  color: #333; /* Dark text color */
+  width: 100%;
+  text-align: center; /* Centered text */
+}
+
+form .text h3 a {
+  color: #4070f4; /* Blue link color */
+  text-decoration: none; /* No underline */
+}
+
+form .text h3 a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
